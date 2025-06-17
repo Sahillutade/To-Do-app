@@ -1,0 +1,58 @@
+<div class="bg-light text-dark p-3">
+    <h2 class="d-flex justify-content-between"> <span>User Dashboard</span> <span id="active-user"></span> <button class="btn btn-link" id="btn-signout">Signout</button> </h2>
+    <button id="btnAddAppointment" data-bs-target="#add-appointment" data-bs-toggle="modal" class="bi btn btn-primary bi-calendar-event-fill"> Add Appointment </button>
+    <!-- Add Modal -->
+     <div class="modal fade" id="add-appointment">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Add New Appointment</h3>
+                </div>
+                <div class="modal-body">
+                    <dl>
+                        <dt>Appointment ID</dt>
+                        <dd> <input type="number" class="form-control" id="appointment-id"> </dd>
+                        <dt>Title</dt>
+                        <dd> <input type="text" class="form-control" id="appointment-title"> </dd>
+                        <dt>Description</dt>
+                        <dd> <textarea class="form-control" rows="4" cols="40" id="appointment-description"></textarea> </dd>
+                        <dt>Date</dt>
+                        <dd> <input type="date" class="form-conrol" id="appointment-date"> </dd>
+                    </dl>
+                </div>
+                <div class="modal-footer">
+                    <button data-bs-dismiss="modal" id="btn-add" class="btn btn-warning">Add</button>
+                    <button class="btn btn-danger mx-2" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!-- Edit Modal -->
+      <div class="modal fade" id="edit-appointment">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Edit Appointment</h3>
+                </div>
+                <div class="modal-body">
+                    <dl>
+                        <input type="hidden" id="edit-appointment-id">
+                        <dt>Title</dt>
+                        <dd> <input type="text" class="form-control" id="edit-appointment-title"> </dd>
+                        <dt>Description</dt>
+                        <dd> <textarea class="form-control" rows="4" cols="40" id="edit-appointment-description"></textarea> </dd>
+                        <dt>Date</dt>
+                        <dd> <input type="date" class="form-conrol" id="edit-appointment-date"> </dd>
+                    </dl>
+                </div>
+                <div class="modal-footer">
+                    <button data-bs-dismiss="modal" id="btn-save" class="btn btn-success">Save</button>
+                    <button class="btn btn-danger mx-2" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+      </div>
+    <div class="mt-4" id="appointment-cards">
+        
+    </div>
+</div>

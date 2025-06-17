@@ -1,0 +1,11 @@
+body {
+    background-image: url("../public/images/to-do.jpg");
+    background-size: cover;
+    height: 500px;
+}
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}

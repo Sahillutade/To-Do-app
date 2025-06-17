@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "john_nit",
+      "password": "john@nit",
+      "email": "john@gmail.com"
+    },
+    {
+      "id": "1092",
+      "username": "Sahil",
+      "password": "Sahil@12",
+      "email": "sahil@outlook.com"
+    }
+  ],
+  "appointments": [
+    {
+      "id": "1",
+      "title": "Meeting",
+      "description": "Attend meeting it is compulsory",
+      "date": "2025-05-16",
+      "username": "john_nit"
+    },
+    {
+      "id": "7d6d",
+      "title": "Portfolio",
+      "description": "Build a portfolio.",
+      "date": "2025-05-22",
+      "username": "Sahil"
+    }
+  ]
+}
