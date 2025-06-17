@@ -16,19 +16,19 @@ $(() => {
         LoadDashBoard();
     }
     else{
-        LoadView('./home.html');
+        LoadView('../public/home.html');
     }
 
     $(document).on('click', '#home-register-button', () => {
-        LoadView("./register.html");
+        LoadView("../public/register.html");
     })
 
     $(document).on('click', '#home-login-button', () => {
-        LoadView("./login.html");
+        LoadView("../public/login.html");
     })
 
     $(document).on('click', '#btn-home', () => {
-        LoadView("./home.html");
+        LoadView("../public/home.html");
     })
 
     // Register Click
